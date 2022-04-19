@@ -115,8 +115,26 @@ Result:
 -----------------------------------------------------------------------------*/
 // Your solution for 02- here:
 
-
-
+function compareTriplets (arrA, arrB) {
+  let a = 0
+  let b = 0
+  if (arrA[0] > arrB[0]) {
+    a = a + 1
+  } else if (arrB[0] > arrA[0]) {
+    b = b + 1
+  }
+  if (arrA[1] > arrB[1]) {
+    a = a + 1
+  } else if (arrB[1] > arrA[1]) {
+    b = b + 1
+  }
+  if (arrA[2] > arrB[2]) {
+    a = a + 1
+  } else if (arrB[2] > arrA[2]) {
+    b = b + 1
+  }
+  return [a, b]
+} 
 
 /*-----------------------------------------------------------------------------
 
